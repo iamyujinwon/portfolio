@@ -54,8 +54,8 @@ module.exports = {
       url: "https://github.com/iamyujinwon",
     },
     {
-      name: "Behance",
-      url: "https://www.behance.net/konstanmnster",
+      name: "Resume",
+      url: "https://docs.google.com/document/d/16TxDRLJm5tTR8BbxiPWReZamseWUp6A5FoOYNuJ62rU/edit?usp=sharing",
     },
   ],
 
@@ -72,7 +72,7 @@ module.exports = {
       },
       {
         name: "🖥️ Portfolio",
-        url: "/#portfolio",
+        url: "/#projects",
       },
     ],
     button: {
