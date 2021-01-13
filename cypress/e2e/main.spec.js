@@ -9,10 +9,9 @@ describe("IndexPage", () => {
 
   it("renders all sections", () => {
     cy.get("#hero").should("exist")
-    cy.get("#articles").should("exist")
     cy.get("#about").should("exist")
-    cy.get("#interests").should("exist")
-    cy.get("#projects").should("exist")
+    cy.get("#skills").should("exist")
+    cy.get("#portfolio").should("exist")
     cy.get("#contact").should("exist")
   })
 

@@ -2,7 +2,7 @@ module.exports = {
   //-- SITE SETTINGS -----
   author: "@konstantinmuenster",
   siteTitle: "Gatsby Starter Portfolio Minimal",
-  siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
+  siteShortTitle: "YW", // Used as logo text in header, footer, and splash screen
   siteDescription:
     "A modern one-page portfolio with a clean yet expressive design.",
   siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
@@ -41,31 +41,17 @@ module.exports = {
     primary: "Roboto, Arial, sans-serif",
   },
 
-  //-- ARTICLES SECTION SETTINGS -----
-  // You can create your own Medium feed with this rss to json converter: https://rss2json.com/
-  // To access your Medium RSS feed, just replace this url with your username: https://medium.com/feed/@{yourname}
-  mediumRssFeed:
-    "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40konstantinmuenster",
-  // rssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.theguardian.com%2Finternational%2Frss",
-
-  shownArticles: 3,
-
   //-- SOCIAL MEDIA SETTINGS -----
   // There are icons available for the following platforms:
   // Medium, GitHub, LinkedIn, XING, Behance
   socialMedia: [
     {
       name: "Linkedin",
-      url: "https://www.linkedin.com/in/konstantin-muenster/",
-    },
-    {
-      name: "Medium",
-      url: "https://konstantinmuenster.medium.com/",
+      url: "https://www.linkedin.com/in/yujinwon/",
     },
     {
       name: "Github",
-      url:
-        "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
+      url: "https://github.com/iamyujinwon",
     },
     {
       name: "Behance",
@@ -77,16 +63,16 @@ module.exports = {
   navLinks: {
     menu: [
       {
-        name: "Articles",
-        url: "/#articles",
-      },
-      {
-        name: "About Me",
+        name: "👩 About Me",
         url: "/#about",
       },
       {
-        name: "Features",
-        url: "/#projects",
+        name: "🔧 Skills",
+        url: "/#interests",
+      },
+      {
+        name: "🖥️ Portfolio",
+        url: "/#portfolio",
       },
     ],
     button: {

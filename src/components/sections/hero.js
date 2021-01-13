@@ -20,6 +20,7 @@ const StyledSection = styled.section`
 
 const StyledContentWrapper = styled(ContentWrapper)`
   && {
+    font-size: 4rem;
     width: 100%;
     height: 100%;
     min-height: 60vh;
@@ -37,18 +38,18 @@ const StyledContentWrapper = styled(ContentWrapper)`
     }
     .emoji {
       margin-left: 0.75rem;
-      width: 2.2rem;
-      height: 2.2rem;
+      width: 3rem;
+      height: 3rem;
       @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
         margin-left: 1rem;
-        width: 3rem;
-        height: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
       }
     }
     .title {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-        margin-bottom: 0;
+        margin-bottom: 1.5rem;
       }
     }
     .subtitle {

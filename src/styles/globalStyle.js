@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 import modernNormalize from "styled-modern-normalize"
 
 const GlobalStyle = createGlobalStyle`
-    
+
     // Import normalize.css
     ${modernNormalize}
 
@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.colors.text};
         font-size: 1rem;
         font-family: ${({ theme }) => theme.fonts.primary};
-        line-height: 1.5rem;
+        line-height: 1.7rem;
         font-weight: 400;
         text-rendering: optimizeLegibility;
         &.blur {
@@ -56,12 +56,12 @@ const GlobalStyle = createGlobalStyle`
 
     h1 {
         font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.375rem;
+        font-size: 2.625rem;
+        line-height: 4rem;
         color: ${({ theme }) => theme.colors.primary};
         @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-            font-size: 2.625rem;
-            line-height: 4rem;
+            font-size: 4rem;
+            line-height: 4.2rem;
         }
     }
 
@@ -82,6 +82,9 @@ const GlobalStyle = createGlobalStyle`
         line-height: 2.25rem;
         color: ${({ theme }) => theme.colors.primary};
         margin-bottom: 3rem;
+        @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+            font-size: 2.5rem;
+        }
     }
 
     h4 {

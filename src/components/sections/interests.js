@@ -77,23 +77,19 @@ const StyledInterests = styled.div`
       display: block;
       -webkit-appearance: none;
     }
-
     &::-webkit-scrollbar:horizontal {
       height: 0.8rem;
     }
-
     &::-webkit-scrollbar-thumb {
       border-radius: 8px;
       border: 0.2rem solid ${({ theme }) => theme.colors.background};
       background-color: ${({ theme }) => theme.colors.scrollBar};
     }
-
     &::-webkit-scrollbar-track {
       background-color: ${({ theme }) => theme.colors.background};
       border-radius: 8px;
     }
   }
-
   .interest {
     width: 15.625rem;
     height: 3rem;
