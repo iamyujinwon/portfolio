@@ -43,7 +43,7 @@ module.exports = {
 
   //-- SOCIAL MEDIA SETTINGS -----
   // There are icons available for the following platforms:
-  // Medium, GitHub, LinkedIn, XING, Behance
+  // GitHub, LinkedIn, Resume
   socialMedia: [
     {
       name: "Linkedin",
@@ -54,8 +54,9 @@ module.exports = {
       url: "https://github.com/iamyujinwon",
     },
     {
-      name: "Resume",
-      url: "https://docs.google.com/document/d/16TxDRLJm5tTR8BbxiPWReZamseWUp6A5FoOYNuJ62rU/edit?usp=sharing",
+      name: "✨ Resume",
+      url:
+        "https://docs.google.com/document/d/e/2PACX-1vTkuSsqQjgziZQjnVXBJEKiMO2MeAneaX_E-5qfDxU1J54G63zptqTkqzGybrh0OdkDdRvsdLzm1Sui/pub",
     },
   ],
 
