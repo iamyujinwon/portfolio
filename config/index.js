@@ -55,8 +55,7 @@ module.exports = {
     },
     {
       name: "✨ Resume",
-      url:
-        "https://docs.google.com/document/d/e/2PACX-1vTkuSsqQjgziZQjnVXBJEKiMO2MeAneaX_E-5qfDxU1J54G63zptqTkqzGybrh0OdkDdRvsdLzm1Sui/pub",
+      url: "../static/Yujin_Resume.pdf",
     },
   ],
 
