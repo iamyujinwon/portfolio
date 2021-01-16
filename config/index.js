@@ -55,7 +55,7 @@ module.exports = {
     },
     {
       name: "✨ Resume",
-      url: "../static/Yujin_Resume.pdf",
+      url: "/Yujin_Resume.pdf",
     },
   ],
 
