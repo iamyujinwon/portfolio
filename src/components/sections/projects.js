@@ -152,7 +152,7 @@ const StyledProject = styled(motion.div)`
       box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.32);
     }
     @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-      height: 18.75rem;
+      height: 15rem;
     }
   }
 `
