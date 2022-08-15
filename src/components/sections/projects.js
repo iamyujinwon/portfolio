@@ -33,12 +33,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
   && {
     width: 100%;
     height: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 0rem;
+    padding-left: 0rem;
     @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
       padding-right: 2.5rem;
       padding-left: 2.5rem;
@@ -52,54 +50,17 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
     }
     .projects {
-      display: flex;
-      flex-direction: row;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30rem;
       margin-top: -2.5rem;
-      padding: 2.5rem 2.5rem;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      -webkit-overflow-scrolling: touch;
-      &::-webkit-scrollbar {
-        display: none;
-      }
+      padding: 2.5rem;
       @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+        width: 100%;
         flex-direction: column;
         margin-top: 0;
         padding: 0;
-        overflow: visible;
-      }
-      /* Show scrollbar if desktop and wrapper width > viewport width */
-      @media (hover: hover) {
-        scrollbar-color: ${({ theme }) => theme.colors.scrollBar} transparent; // Firefox only
-        &::-webkit-scrollbar {
-          display: block;
-          -webkit-appearance: none;
-        }
-
-        &::-webkit-scrollbar:horizontal {
-          height: 0.8rem;
-        }
-
-        &::-webkit-scrollbar-thumb {
-          border-radius: 8px;
-          border: 0.2rem solid ${({ theme }) => theme.colors.background};
-          background-color: ${({ theme }) => theme.colors.scrollBar};
-        }
-
-        &::-webkit-scrollbar-track {
-          background-color: ${({ theme }) => theme.colors.background};
-          border-radius: 8px;
-        }
-      }
-    }
-    .counter {
-      position: absolute;
-      top: 2.2rem;
-      right: 2.5rem;
-      font-size: 1.125rem;
-      font-weight: 500;
-      @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-        display: none;
       }
     }
   }
@@ -111,14 +72,11 @@ const StyledProject = styled(motion.div)`
   justify-content: flex-end;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   flex-shrink: 0;
-  padding-right: 2.5rem;
-  max-width: 20rem;
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
     max-width: 25rem;
     margin-top: 2rem;
-    padding-right: 5rem;
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     justify-content: space-between;
