@@ -263,9 +263,6 @@ const Projects = ({ content }) => {
           animate={tOnScreen ? "visible" : "hidden"}
         >
           <h3 className="section-title">{sectionDetails.frontmatter.title}</h3>
-          <div className="counter">
-            {visibleProject} / {projects.length}
-          </div>
         </motion.div>
         <div className="projects">
           {projects.map(project => {

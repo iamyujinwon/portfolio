@@ -54,8 +54,8 @@ module.exports = {
       url: "https://github.com/iamyujinwon",
     },
     {
-      name: "✨ Resume",
-      url: "/Yujin_Resume.pdf",
+      name: "Resume",
+      url: "/Yujin_Won_Resume.pdf",
     },
   ],
 
@@ -63,15 +63,15 @@ module.exports = {
   navLinks: {
     menu: [
       {
-        name: "👩 About Me",
+        name: "About Me",
         url: "/#about",
       },
       {
-        name: "🔧 Skills",
+        name: "Skills",
         url: "/#interests",
       },
       {
-        name: "🖥️ Portfolio",
+        name: "Projects",
         url: "/#projects",
       },
     ],
