@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const StyledButton = styled.button`
-  width: 15.625rem;
+  width: 100%;
   height: 3rem;
   background-color: ${({ theme }) => theme.colors.btn};
   color: ${({ theme }) => theme.colors.background};

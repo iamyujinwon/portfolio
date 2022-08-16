@@ -41,14 +41,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
 `
 
 const StyledInterests = styled.div`
+  width: 100%;
   display: grid;
   /* Calculate how many columns are needed, depending on interests count */
-  grid-template-columns: repeat(
-    ${({ itemCount }) => Math.ceil(itemCount / 2)},
-    15.625rem
-  );
-  grid-template-rows: repeat(2, auto);
-  grid-auto-flow: column;
+  grid-template-columns: repeat(2, auto);
   column-gap: 1rem;
   row-gap: 1rem;
   padding: 0 2.5rem 1.25rem 2.5rem;
@@ -66,7 +62,8 @@ const StyledInterests = styled.div`
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     grid-auto-flow: row;
-    grid-template-columns: repeat(3, 15.625rem);
+    grid-template-columns: repeat(3, 10rem);
+    column-gap: 8rem;
     overflow: visible;
     padding: 0;
   }
@@ -91,7 +88,7 @@ const StyledInterests = styled.div`
     }
   }
   .interest {
-    width: 15.625rem;
+    width: auto;
     height: 3rem;
     display: flex;
     justify-content: flex-start;
@@ -102,6 +99,9 @@ const StyledInterests = styled.div`
     background: ${({ theme }) => theme.colors.card};
     .icon {
       margin-right: 0.5rem;
+    }
+    @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+      width: 15.625rem;
     }
   }
 `

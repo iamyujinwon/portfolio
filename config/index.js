@@ -79,7 +79,7 @@ module.exports = {
         url: "/#about",
       },
       {
-        name: "Skills",
+        name: "Interests",
         url: "/#interests",
       },
       {
