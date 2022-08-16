@@ -33,10 +33,12 @@ const StyledContentWrapper = styled(ContentWrapper)`
   && {
     width: 100%;
     height: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding-right: 0rem;
-    padding-left: 0rem;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
     @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
       padding-right: 2.5rem;
       padding-left: 2.5rem;
@@ -50,17 +52,39 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
     }
     .projects {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 30rem;
+      display: flex;
+      flex-direction: column;
       margin-top: -2.5rem;
-      padding: 2.5rem;
+      padding: 2.5rem 2.5rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-        width: 100%;
-        flex-direction: column;
         margin-top: 0;
         padding: 0;
+        overflow: visible;
+      }
+      /* Show scrollbar if desktop and wrapper width > viewport width */
+      @media (hover: hover) {
+        &::-webkit-scrollbar {
+          display: block;
+          -webkit-appearance: none;
+        }
+        &::-webkit-scrollbar:horizontal {
+          height: 0.8rem;
+        }
+        &::-webkit-scrollbar-thumb {
+          border-radius: 8px;
+          border: 0.2rem solid ${({ theme }) => theme.colors.background};
+          background-color: ${({ theme }) => theme.colors.scrollBar};
+        }
+        &::-webkit-scrollbar-track {
+          background-color: ${({ theme }) => theme.colors.background};
+          border-radius: 8px;
+        }
       }
     }
   }
@@ -72,16 +96,15 @@ const StyledProject = styled(motion.div)`
   justify-content: flex-end;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   flex-shrink: 0;
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    max-width: 25rem;
     margin-top: 2rem;
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    flex-direction: row;
     justify-content: space-between;
     flex-shrink: 1;
-    max-width: 62.5rem;
     margin-bottom: 10rem;
     padding-right: 0;
     /* Positioning of image and details should vary */
@@ -152,7 +175,7 @@ const StyledProject = styled(motion.div)`
       box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.32);
     }
     @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-      height: 15rem;
+      height: 18.75rem;
     }
   }
 `
