@@ -10,7 +10,7 @@ import { socialMedia } from "../../config"
 const StyledSocialWrapper = styled.div`
   display: grid;
   /* Calculate columns, depending on how many profiles there are */
-  grid-template-columns: repeat(${({ itemCount }) => itemCount + 1}, auto);
+  grid-template-columns: repeat(1, auto);
   justify-content: start;
   justify-items: start;
 
@@ -19,14 +19,12 @@ const StyledSocialWrapper = styled.div`
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 
-  overflow-x: scroll;
-  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     display: none;
   }
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    overflow: visible;
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    grid-template-columns: repeat(${({ itemCount }) => itemCount + 1}, auto);
   }
 
   /* Workaround: https://stackoverflow.com/questions/38993170/last-margin-padding-collapsing-in-flexbox-grid-layout */
@@ -69,7 +67,8 @@ const StyledSocialWrapper = styled.div`
 `
 
 const StyledSocialProfile = styled.a`
-  width: ${({ width }) => (width ? width : "auto")};
+  width: 12rem;
+  text-align: center;
   height: auto;
   background: ${({ theme }) => theme.colors.btn};
   background-size: 205% 100%;
@@ -80,7 +79,7 @@ const StyledSocialProfile = styled.a`
   transition: all 0.1s ease-out;
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "1rem")};
   font-weight: 500;
-  color: ${({ theme }) => theme.colors.background};
+  color: #f4ef99;
   &:hover {
     background-position: left bottom;
     color: ${({ theme }) => theme.colors.background};
@@ -114,17 +113,7 @@ const Social = ({ width, padding, fontSize, fontWeight, withIcon }) => {
             fontSize={fontSize}
             fontWeight={fontWeight}
           >
-            {withIcon ? (
-              <Icon
-                name={name}
-                color={
-                  darkMode
-                    ? darkTheme.colors.primary
-                    : lightTheme.colors.primary
-                }
-              />
-            ) : null}{" "}
-            {name}
+            {withIcon ? <Icon name={name} color={"#F4EF99"} /> : null} {name}
           </StyledSocialProfile>
         )
       })}
